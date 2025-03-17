@@ -1,0 +1,14 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Et FizzBuzz-program med tester",
+  "main": "fizzbuzz.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "author": "Ditt Navn",
+  "license": "ISC"
+}

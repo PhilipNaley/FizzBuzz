@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Kalkulator</title>
+    <script defer src="fizzbuzz.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FizzBuzz Kalkulator</h1>
+    <p>Skriv inn et tall og se om det er Fizz, Buzz eller FizzBuzz!</p>
+    
+    <input type="number" id="numberInput" placeholder="Skriv inn et tall">
+    <button onclick="checkFizzBuzz()">Sjekk</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function checkFizzBuzz() {
+            const num = document.getElementById("numberInput").value;
+            const result = fizzBuzz(parseInt(num));
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
