@@ -1,17 +1,18 @@
-const fizzBuzz = require('./FizzBuzz'); // Importerer funksjonen for testing
+// FizzBuzz.test.js
+import { fizzBuzz } from './FizzBuzz.js';  // Importer fizzBuzz funksjonen fra fizzBuzz.js
 
-test('should return "1" for input 1', () => {
-    expect(fizzBuzz(1)).toBe("1");S
+test('fizzBuzz(1) = 1', () => {
+    expect(fizzBuzz(1)).toBe(1);
 });
 
-test('should return "Fizz" for input 3', () => {
+test('fizzBuzz(3) = "Fizz"', () => {
     expect(fizzBuzz(3)).toBe("Fizz");
 });
 
-test('should return "Buzz" for input 5', () => {
+test('fizzBuzz(5) = "Buzz"', () => {
     expect(fizzBuzz(5)).toBe("Buzz");
 });
 
-test('should return "FizzBuzz" for input 15', () => {
+test('fizzBuzz(15) = "FizzBuzz"', () => {
     expect(fizzBuzz(15)).toBe("FizzBuzz");
 });

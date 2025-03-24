@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#result, #fibonacciResult {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fibonacciResult {
+    font-size: 22px;
+}

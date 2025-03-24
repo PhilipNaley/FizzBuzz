@@ -1,16 +1,12 @@
-function fizzBuzz(number) {
-    if (number % 3 === 0 && number % 5 === 0) {
+// fizzBuzz.js
+export function fizzBuzz(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
         return "FizzBuzz";
-    } else if (number % 3 === 0) {
+    } else if (num % 3 === 0) {
         return "Fizz";
-    } else if (number % 5 === 0) {
+    } else if (num % 5 === 0) {
         return "Buzz";
     } else {
-        return number.toString();
+        return num;
     }
-}
-
-// Eksporter for bruk i tester
-if (typeof module !== "undefined") {
-    module.exports = fizzBuzz;
 }
